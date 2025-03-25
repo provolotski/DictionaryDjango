@@ -1,3 +1,6 @@
+
+
+
 """
 Django settings for DictionaryDjango project.
 
@@ -45,6 +48,8 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'DictionaryDjango.middleware.ActiveDirectoryAuthMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -122,3 +127,64 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Active Directory Settings
+AD_SERVER = 'ldap://belstat.local'
+AD_DOMAIN = 'BELSTAT'
+AD_SEARCH_BASE = 'OU=Users,DC=belstat,DC=local'
+
+# Бэкенды аутентификации
+AUTHENTICATION_BACKENDS = [
+    # 'django.contrib.auth.backends.ModelBackend',  # Оставляем для совместимости
+    'DictionaryDjango.auth_backends.ActiveDirectorySessionBackend',  # Ваш кастомный бэкенд
+]
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': 'logs/debug.log',
+            'maxBytes': 1024*1024*5,  # 5 MB
+            'backupCount': 5,
+            'formatter': 'verbose'
+        },
+        'error_file': {
+            'level': 'ERROR',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': 'logs/errors.log',
+            'maxBytes': 1024*1024*5,
+            'backupCount': 5,
+            'formatter': 'verbose'
+        },
+        'monitored_handler': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'logs/monitoring_view.log',
+            'formatter': 'verbose'
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file', 'error_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'special.view': {  # Это имя логгера, которое вы будете использовать в view
+            'handlers': ['monitored_handler'],
+            'level': 'DEBUG',
+            'propagate': True,  # Чтобы логи не дублировались в корневом логгере
+        },
+    },
+}
+
