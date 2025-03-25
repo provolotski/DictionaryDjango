@@ -1,0 +1,74 @@
+DEBUG 2025-03-24 15:57:34,780 auth_backends 34820 64408 Connecting to LDAP server
+DEBUG 2025-03-24 15:57:34,780 auth_backends 34820 64408 username: ViachaslauProvolocki, password: kU3vgnAQ
+DEBUG 2025-03-24 15:57:34,780 auth_backends 34820 64408 server: ldap://belstat.local
+DEBUG 2025-03-24 15:57:34,780 auth_backends 34820 64408  logging as ViachaslauProvolocki@BELSTAT
+DEBUG 2025-03-24 15:59:46,276 auth_backends 49284 8440 Connecting to LDAP server
+DEBUG 2025-03-24 15:59:46,276 auth_backends 49284 8440 username: ViachaslauProvolocki, password: kU3vgnAQ
+DEBUG 2025-03-24 15:59:46,276 auth_backends 49284 8440 server: ldap://belstat.local
+DEBUG 2025-03-24 15:59:46,276 auth_backends 49284 8440  logging as ViachaslauProvolocki@BELSTAT
+DEBUG 2025-03-24 16:06:07,477 auth_backends 9752 27808 Connecting to LDAP server
+DEBUG 2025-03-24 16:06:07,477 auth_backends 9752 27808 username: ViachaslauProvolocki, password: kU3vgnAQ
+DEBUG 2025-03-24 16:06:07,477 auth_backends 9752 27808 server: ldap://belstat.local
+DEBUG 2025-03-24 16:06:07,477 auth_backends 9752 27808  logging as ViachaslauProvolocki@BELSTAT
+INFO 2025-03-24 16:06:07,559 auth_backends 9752 27808 походу залогинились
+DEBUG 2025-03-24 16:11:00,224 auth_backends 48988 50940 Connecting to LDAP server
+DEBUG 2025-03-24 16:11:00,224 auth_backends 48988 50940 username: ViachaslauProvolocki, password: л√3мпт‘…
+DEBUG 2025-03-24 16:11:00,224 auth_backends 48988 50940 server: ldap://belstat.local
+DEBUG 2025-03-24 16:11:00,224 auth_backends 48988 50940  logging as ViachaslauProvolocki@BELSTAT
+ERROR 2025-03-24 16:11:00,343 auth_backends 48988 50940 AD Auth Error: automatic bind not successful - invalidCredentials
+DEBUG 2025-03-24 16:12:04,417 auth_backends 48988 50940 Connecting to LDAP server
+DEBUG 2025-03-24 16:12:04,417 auth_backends 48988 50940 username: ViachaslauProvolocki, password: kU3vgnAQ
+DEBUG 2025-03-24 16:12:04,417 auth_backends 48988 50940 server: ldap://belstat.local
+DEBUG 2025-03-24 16:12:04,417 auth_backends 48988 50940  logging as ViachaslauProvolocki@BELSTAT
+INFO 2025-03-24 16:12:04,512 auth_backends 48988 50940 походу залогинились
+INFO 2025-03-24 16:12:04,513 auth_backends 48988 50940 нащли себ€
+DEBUG 2025-03-24 16:22:59,356 auth_backends 12276 66616 Connecting to LDAP server
+DEBUG 2025-03-24 16:22:59,356 auth_backends 12276 66616 username: ViachaslauProvolocki, password: л√3мпт‘…
+DEBUG 2025-03-24 16:22:59,356 auth_backends 12276 66616 server: ldap://belstat.local
+DEBUG 2025-03-24 16:22:59,356 auth_backends 12276 66616  logging as ViachaslauProvolocki@BELSTAT
+ERROR 2025-03-24 16:22:59,370 auth_backends 12276 66616 AD Auth Error: automatic bind not successful - invalidCredentials
+DEBUG 2025-03-24 16:23:13,686 auth_backends 12276 66616 Connecting to LDAP server
+DEBUG 2025-03-24 16:23:13,686 auth_backends 12276 66616 username: ViachaslauProvolocki, password: kU3vgnAQ
+DEBUG 2025-03-24 16:23:13,686 auth_backends 12276 66616 server: ldap://belstat.local
+DEBUG 2025-03-24 16:23:13,686 auth_backends 12276 66616  logging as ViachaslauProvolocki@BELSTAT
+INFO 2025-03-24 16:23:14,094 auth_backends 12276 66616 походу залогинились
+INFO 2025-03-24 16:23:14,096 auth_backends 12276 66616  ищем себ€
+INFO 2025-03-24 16:23:14,096 auth_backends 12276 66616 нашли себ€
+ERROR 2025-03-24 16:23:14,096 auth_backends 12276 66616 AD Auth Error: attribute 'givenname' not found
+DEBUG 2025-03-24 16:26:48,430 auth_backends 55908 27436 Connecting to LDAP server
+DEBUG 2025-03-24 16:26:48,430 auth_backends 55908 27436 username: ViachaslauProvolocki, password: kU3vgnAQ
+DEBUG 2025-03-24 16:26:48,430 auth_backends 55908 27436 server: ldap://belstat.local
+DEBUG 2025-03-24 16:26:48,430 auth_backends 55908 27436  logging as ViachaslauProvolocki@BELSTAT
+INFO 2025-03-24 16:26:48,518 auth_backends 55908 27436 походу залогинились
+INFO 2025-03-24 16:26:48,519 auth_backends 55908 27436  ищем себ€
+INFO 2025-03-24 16:26:48,519 auth_backends 55908 27436 нашли себ€
+ERROR 2025-03-24 16:26:48,519 auth_backends 55908 27436 AD Auth Error: attribute 'givenname' not found
+DEBUG 2025-03-24 16:27:36,656 auth_backends 52796 61252 Connecting to LDAP server
+DEBUG 2025-03-24 16:27:36,656 auth_backends 52796 61252 username: ViachaslauProvolocki, password: kU3vgnAQ
+DEBUG 2025-03-24 16:27:36,656 auth_backends 52796 61252 server: ldap://belstat.local
+DEBUG 2025-03-24 16:27:36,656 auth_backends 52796 61252  logging as ViachaslauProvolocki@BELSTAT
+INFO 2025-03-24 16:27:36,747 auth_backends 52796 61252 походу залогинились
+INFO 2025-03-24 16:27:36,748 auth_backends 52796 61252  ищем себ€
+INFO 2025-03-24 16:27:36,748 auth_backends 52796 61252 нашли себ€
+ERROR 2025-03-24 16:27:36,748 auth_backends 52796 61252 AD Auth Error: attribute 'sn' not found
+DEBUG 2025-03-24 16:28:19,579 auth_backends 30456 63424 Connecting to LDAP server
+DEBUG 2025-03-24 16:28:19,579 auth_backends 30456 63424 username: ViachaslauProvolocki, password: kU3vgnAQ
+DEBUG 2025-03-24 16:28:19,579 auth_backends 30456 63424 server: ldap://belstat.local
+DEBUG 2025-03-24 16:28:19,579 auth_backends 30456 63424  logging as ViachaslauProvolocki@BELSTAT
+INFO 2025-03-24 16:28:19,667 auth_backends 30456 63424 походу залогинились
+INFO 2025-03-24 16:28:19,668 auth_backends 30456 63424  ищем себ€
+INFO 2025-03-24 16:28:19,668 auth_backends 30456 63424 нашли себ€
+DEBUG 2025-03-24 16:50:38,499 auth_backends 65096 27524 Connecting to LDAP server
+DEBUG 2025-03-24 16:50:38,499 auth_backends 65096 27524 username: ViachaslauProvolocki, password: kU3vgnAQ
+DEBUG 2025-03-24 16:50:38,499 auth_backends 65096 27524 server: ldap://belstat.local
+DEBUG 2025-03-24 16:50:38,499 auth_backends 65096 27524  logging as ViachaslauProvolocki@BELSTAT
+INFO 2025-03-24 16:50:38,575 auth_backends 65096 27524 походу залогинились
+INFO 2025-03-24 16:50:38,577 auth_backends 65096 27524  ищем себ€
+INFO 2025-03-24 16:50:38,577 auth_backends 65096 27524 нашли себ€
+DEBUG 2025-03-24 16:51:00,088 auth_backends 65096 27524 Connecting to LDAP server
+DEBUG 2025-03-24 16:51:00,088 auth_backends 65096 27524 username: ViachaslauProvolocki, password: kU3vgnAQ
+DEBUG 2025-03-24 16:51:00,088 auth_backends 65096 27524 server: ldap://belstat.local
+DEBUG 2025-03-24 16:51:00,088 auth_backends 65096 27524  logging as ViachaslauProvolocki@BELSTAT
+INFO 2025-03-24 16:51:00,482 auth_backends 65096 27524 походу залогинились
+INFO 2025-03-24 16:51:00,484 auth_backends 65096 27524  ищем себ€
+INFO 2025-03-24 16:51:00,484 auth_backends 65096 27524 нашли себ€
